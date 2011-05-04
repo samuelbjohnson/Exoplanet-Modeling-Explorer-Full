@@ -80,7 +80,7 @@ dojo.declare("org.exoplanets.eme.js.RvForm", null, {
 			value: 0
 		});
 		
-		s.dvdt = new org.exoplanets.eme.js.RvParameter(dojo.create("div", {}, this.getContainerNode()), {
+		s.dvdt = new org.exoplanets.eme.js.RvParameter(dojo.create("div", {class: "lastOrbelParameter"}, this.getContainerNode()), {
 			parameterName: "dvdt",
 			name: "dvdt",
 			value: 0

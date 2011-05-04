@@ -1,13 +1,14 @@
 div#header {
-	padding: 8px;
 	background-color: #EEEEEE;
+	height: 2.5em;
 	box-shadow: 0 0 5px #333333;
 	-webkit-box-shadow: 0 0 5px #333333; /* Safari */
 }
 
 div#logo {
-	margin: 0;
+	margin: 5px;
 	font-size: 1.3em;
+	float: left;
 }
 
 #logo a {
@@ -15,24 +16,14 @@ div#logo {
 	text-decoration: none;
 }
 
-#page {
-	min-width: 960px;
-}
-
-#sidebar1 {
+div#accountInfo {
 	float: right;
-	margin: 10px;
-	border: 1px solid black;
-	padding: 5px;
+	margin: 0;
+	font-size: 1.3em;
 }
 
-#sidebar1 div.loginHeader {
-	font-size: 2em;
-	margin: 5px;
-}
+#page {
 
-#sidebar1 label {
-	width: 50px;
 }
 
 #content {
