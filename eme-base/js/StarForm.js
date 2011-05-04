@@ -43,7 +43,7 @@ dojo.declare("org.exoplanets.eme.js.StarForm", null, {
 	retrieveNew: function() {
 		var query, xhrArgs;
 		
-		query = "obsId=" + this.starNameBox.getValue();
+		query = "starName=" + this.starNameBox.getValue();
 		
 		xhrArgs = {
 			url: "services/observationDataJson.php?" + query,
