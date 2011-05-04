@@ -27,7 +27,9 @@ dojo.declare("org.exoplanets.eme.js.StarForm", null, {
 	retrieve: function(/*int*/obsId) {
 		var query;
 		
-		this.obsOptionDialog.hide();
+		if(this.obsOptionDialog) {
+			this.obsOptionDialog.hide();
+		}
 		
 		query = "obsId=" + obsId;
 		this.store = new dojox.data.XmlStore({
