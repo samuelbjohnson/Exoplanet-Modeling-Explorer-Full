@@ -69,14 +69,14 @@ function parseRvTblFile(/*string*/$fileName) {
 			} else if (substr($line, 1, 9) == "BIBCODES ") {
 				$bibcodes = trim(substr($line, strpos($line, "=") + 2));
 				$bibcodes = substr($bibcodes, 1, strlen($bibcodes) - 2);
-				$query = $rvDb -> prepare("INSERT INTO rv_observations1 (starName, reference, bibcodes) VALUES(?, ?, ?)");
+				$query = $rvDb -> prepare("INSERT INTO rv_observations (starName, reference, bibcodes) VALUES(?, ?, ?)");
 				$query -> bindParam(1, $starName);
 				$query -> bindParam(2, $references);
 				$query -> bindParam(3, $bibcodes);
 				$query -> execute();
 				$obsId = $rvDb -> lastInsertId();
 				if ($obsId == "0") {
-					$obsQuery = $rvDb -> prepare("SELECT obsId FROM rv_observations1 WHERE starName=? AND reference=? AND bibcodes=?");
+					$obsQuery = $rvDb -> prepare("SELECT obsId FROM rv_observations WHERE starName=? AND reference=? AND bibcodes=?");
 					$obsQuery -> bindParam(1, $starName);
 					$obsQuery -> bindParam(2, $references);
 					$obsQuery -> bindParam(3, $bibcodes);
