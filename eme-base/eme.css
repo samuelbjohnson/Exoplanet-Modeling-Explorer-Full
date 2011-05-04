@@ -22,6 +22,29 @@ div#accountInfo {
 	font-size: 1.3em;
 }
 
+div#loginDialog {
+	width: 250px;
+}
+
+div#loginDialog span.formRow {
+	display: block;
+	height: 2em;
+	margin: 2px;
+}
+
+div#loginDialog span.formRow label {
+	display: block;
+	padding: 4px 0 0 5px;
+}
+
+div#loginDialog .leftSide {
+	float: left;
+}
+
+div#loginDialog .rightSide {
+	float: right;
+}
+
 #page {
 
 }

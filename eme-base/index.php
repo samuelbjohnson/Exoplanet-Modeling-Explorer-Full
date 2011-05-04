@@ -132,19 +132,34 @@ include("include/session.php");
 				}
 				?>
 				<form action="process.php" method="POST">
-					<label for="usernameField">Username:</label>
-					<input type="text" name="user" size="15" maxlength="30" value="<? echo $form->value("user"); ?>" id="usernameField">
-					<? echo $form->error("user"); ?><br />
-					<label for="passwordField">Password:</label>
-					<input type="password" name="pass" size="15" maxlength="30" value="<? echo $form->value("pass"); ?>" id="passwordField">
-					<? echo $form->error("pass"); ?><br />
-					<input type="checkbox" name="remember" <? if($form->value("remember") != ""){ echo "checked"; } ?>>
-					<font size="2">Remember me next time &nbsp;&nbsp;&nbsp;&nbsp;
-					<input type="hidden" name="sublogin" value="1">
-					<input type="submit" value="Login">
-					<br />
-					<font size="2">[<a href="forgotpass.php">Forgot Password?</a>]</font><br />
-					Not registered? <a href="register.php">Sign-Up!</a>
+					<span class="formRow">
+						<label for="usernameField" class="leftSide">Username:</label>
+						<input type="text" name="user" size="15" maxlength="30" value="<? echo $form->value("user"); ?>" id="usernameField" class="rightSide">
+						<? echo $form->error("user"); ?>
+					</span>
+					<span class="formRow">
+						<label for="passwordField" class="leftSide">Password:</label>
+						<input type="password" name="pass" size="15" maxlength="30" value="<? echo $form->value("pass"); ?>" id="passwordField" class="rightSide">
+						<? echo $form->error("pass"); ?>
+					</span>
+					<span class="formRow">
+						<span class="leftSide">
+							<input type="checkbox" name="remember" <? if($form->value("remember") != ""){ echo "checked"; } ?>>
+							Remember me next time
+						</span>
+						<input type="hidden" name="sublogin" value="1">
+						<input type="submit" value="Login" class="rightSide">
+					</span>
+					<span class="formRow">
+						<span class="leftSide">
+							<a href="forgotpass.php">Forgot your password?</a>
+						</span>
+					</span>
+					<span class="formRow">
+						<span class="leftSide">
+							Not registered? <a href="register.php">Sign-Up!</a>
+						</span>
+					</span>
 				</form>
 			</div><!--end loginDialog-->
 			<?
