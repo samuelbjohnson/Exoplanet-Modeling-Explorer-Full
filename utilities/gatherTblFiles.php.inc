@@ -1,7 +1,7 @@
 <?php
 require_once("rvParser.php.inc");
 
-$directory = opendir("data");
+$directory = opendir("../data");
 $fileCount = 0;
 while(($file = readdir($directory)) !== false) {
 	if (substr($file, strlen($file) - 3) == "tbl") {
