@@ -1,8 +1,8 @@
 <?php
 header("Content-Type: text/xml");
 
-//$starName = $_GET['starName'];
-$starName = "HD 142";
+$starName = $_GET['starName'];
+//$starName = "HD 142";
 require("../../utilities/dbSetup.php.inc");
 
 $obsStatement = $rvDb -> prepare("select * from rv_observations where starName = ?");
