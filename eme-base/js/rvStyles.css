@@ -1,0 +1,69 @@
+/*	Graph */
+
+
+div.RvGraph {
+	width: 600px;
+	height: 600px;
+	float: left;
+}
+
+div.rvTools {
+	float: left;
+	position: absolute;
+	left: 800px;
+	top: 250px;
+	font-family: "Georgia", serif;
+	z-index: 1;
+}
+
+div.rvFormSet {
+	width: 325px;
+	height: 325px;
+	border: 1px solid yellow;
+}
+
+/* Form */
+
+#starDataForm {
+
+	position: absolute;
+	top: -50px;
+	left: 150px;
+	/*border: 2px solid #AAAAAA;*/
+
+}
+
+/* RvParameters */
+div.RvParameter {
+	width: 400px;
+	padding: 15px;
+	/*border: 1px solid green;*/
+	
+}
+
+#rvCurvePlot {
+	position: absolute;
+	top: 150px;
+	left: 80px;
+}
+
+fieldset.orbelsSet {
+	border: 1px solid #AAAAAA;
+	background: #EFEFEF;
+}
+
+legend.orbelsSetLegend {
+	background-image: url('images/graph_label.png');
+	background-repeat: no-repeat;
+	color: #190707; 
+	font-family: georgia, serif;
+	font-size: 15px;
+  	text-align: center;
+  	padding-top: 3px;
+  	width: 110px;
+  	height: 26px;
+}
+
+label.rvParameterLabel {
+	margin-left: 10px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<head>
+	<title>Exoplanet Modeling Explorer</title>
+	
+	<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/dojo/1.6/dojo/resources/dojo.css" />
+   <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/dojo/1.6/dijit/themes/tundra/tundra.css" />
+   <link rel="stylesheet" type="text/css" href="js/rvStyles.css" />
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/dojo/1.6/dojo/dojo.xd.js" djConfig="baseUrl:'./'" type="text/javascript"></script>
+	
+	<script type="text/javascript">
+		dojo.registerModulePath("org.exoplanets.eme.js", "./js");
+		dojo.registerModulePath("org.exoplanets.eme.js.science", "./js/science");
+		
+	</script>
+	
+	<script src="./js/RvForm.js" type="text/javascript"></script>
+	<script src="./js/RvGraph.js" type="text/javascript"></script>
+	<script src="./js/StarForm.js" type="text/javascript"></script>
+	<script src="./js/RvParameter.js" type="text/javascript"></script>
+	<script src="./js/science/Orbels.js" type="text/javascript"></script>
+	<script src="./js/RvFormSet.js" type="text/javascript"></script>
+	
+	<script type="text/javascript">
+		
+		//dojo.require("org.exoplanets.eme.js.science.Orbels");
+		dojo.require("org.exoplanets.eme.js.science.Utils");
+		
+		dojo.addOnLoad(function() {
+			var form, graph, starForm, formSet;
+			form = new org.exoplanets.eme.js.RvForm(dojo.byId("rvDataForm"));
+			starForm = new org.exoplanets.eme.js.StarForm(dojo.byId("starDataForm"));
+			graph = new org.exoplanets.eme.js.RvGraph({graphNode: dojo.byId("rvCurvePlot"), rvForm: form, starForm: starForm});
+			
+			formSet = new org.exoplanets.eme.js.RvFormSet(dojo.byId("rvFormSet"));
+			
+		});
+	</script>
+	
+</head>
+<body class="tundra">
+
+	<div id="RV">
+		<div id="rvCurvePlot">
+		
+		</div>
+		<div class="rvTools">
+			<div id="rvFormSet">
+			
+			</div>
+			<form id="rvDataForm" onSubmit="function() {return false;}"
+			
+			</form>
+			<div id="starDataForm">
+		
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

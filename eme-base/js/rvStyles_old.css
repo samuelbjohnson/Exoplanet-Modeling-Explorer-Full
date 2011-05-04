@@ -1,0 +1,27 @@
+/*	Graph */
+
+div.RvGraph {
+	width: 600px;
+	height: 600px;
+	float: left;
+}
+
+div.rvTools {
+	float: left;
+}
+
+div.rvFormSet {
+	width: 325px;
+	height: 325px;
+	border: 1px solid yellow;
+}
+
+/* Form */
+
+/* RvParameters */
+div.RvParameter {
+	width: 400px;
+	padding: 5px;
+	border: 1px solid green;
+}
+

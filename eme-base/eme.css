@@ -1,0 +1,40 @@
+div#header {
+	padding: 8px;
+	background-color: #EEEEEE;
+	box-shadow: 0 0 5px #333333;
+	-webkit-box-shadow: 0 0 5px #333333; /* Safari */
+}
+
+div#logo {
+	margin: 0;
+	font-size: 1.3em;
+}
+
+#logo a {
+	color: #000077;
+	text-decoration: none;
+}
+
+#page {
+	min-width: 960px;
+}
+
+#sidebar1 {
+	float: right;
+	margin: 10px;
+	border: 1px solid black;
+	padding: 5px;
+}
+
+#sidebar1 div.loginHeader {
+	font-size: 2em;
+	margin: 5px;
+}
+
+#sidebar1 label {
+	width: 50px;
+}
+
+#content {
+
+}

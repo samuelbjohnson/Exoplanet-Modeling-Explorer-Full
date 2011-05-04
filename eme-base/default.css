@@ -1,0 +1,507 @@
+
+/*
+
+Design by Free CSS Templates
+
+http://www.freecsstemplates.org
+
+Released for free under a Creative Commons Attribution 2.5 License
+
+*/
+
+
+
+body {
+
+	margin: 0;
+
+	padding: 0;
+
+	background: #EBEBEB url(images/img01.gif) repeat-x left top;
+	background-color:#161600;
+
+	text-align: justify;
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	font-size: 12px;
+
+	color: #454545;
+
+}
+
+
+
+h1, h2, h3 {
+
+	margin-top: 0;
+
+	color: #8C0209;
+
+}
+
+
+
+h1 {
+
+	font-size: 1.6em;
+
+	font-weight: normal;
+
+}
+
+
+
+h2 {
+
+	font-size: 1.6em;
+
+}
+
+
+
+h3 {
+
+	font-size: 1em;
+
+}
+
+
+
+ul {
+
+}
+
+
+
+a {
+
+	text-decoration: none;
+
+	color: #3F5C10;
+
+}
+
+
+
+a:hover {
+
+	border-bottom: none;
+
+}
+
+
+
+a img {
+
+	border: none;
+
+}
+
+
+
+img.left {
+
+	float: left;
+
+	margin: 0 20px 0 0;
+
+}
+
+
+
+img.right {
+
+	float: right;
+
+	margin: 0 0 0 20px;
+
+}
+
+
+
+#header {
+
+	width: 1000px;
+
+	height: 110px;
+
+	margin: 0 auto;
+
+}
+
+
+
+/* Header */
+
+
+
+#logo {
+
+	width: 960px;
+
+	height: 150px;
+
+	margin: 0 auto;
+
+	
+
+}
+
+
+
+#logo h1, #logo p {
+
+	float: left;
+
+	margin: 0px;
+
+}
+
+
+
+#logo span {
+
+	color: #FFFFFF;
+
+}
+
+
+
+#logo h1 {
+
+	padding-top: 40px;
+
+	letter-spacing: -1px;
+
+	text-transform: lowercase;
+
+	font-weight: normal;
+
+	font-size: 5em;
+
+}
+
+
+
+#logo p {
+
+	display: block;
+
+	padding-top: 80px;
+
+	text-transform: uppercase;
+
+	font-size: 10px;
+
+	color: #FFFFFF;
+
+}
+
+
+
+#logo a {
+
+	border: none;
+
+	text-decoration: none;
+
+	color: #FFFFFF;
+
+}
+
+
+
+
+
+/* Page */
+
+
+
+#page {
+
+	width: 960px;
+
+	margin: 0 auto;
+
+	background: url(images/img05.gif) repeat-y left top;
+	
+
+}
+
+
+
+#page-bg {
+
+	
+
+	padding: 0px 10px;
+
+}
+
+
+
+
+
+
+
+#content {
+
+	float: left;
+
+	width: 440px;
+	height: 440px;
+
+	padding: 30px 40px 0px 40px;
+
+}
+
+
+
+
+
+
+
+.title {
+
+	margin: 0px;
+
+	padding: 0px 0px 14px 0px;
+
+	letter-spacing: -1px;
+
+	font-size: 3em;
+
+	font-weight: normal;
+
+	background: url(images/img04.gif) repeat-x left bottom;
+
+}
+
+
+
+.title a {
+
+	border-bottom: none;
+
+	color: #454545;
+
+}
+
+
+
+.title a:hover {
+
+}
+
+
+
+
+
+
+
+.tag {
+
+	padding: 0 15px;
+
+}
+
+
+
+.entry {
+
+}
+
+
+
+.links {
+
+	padding: 4px 0px;
+
+	text-align: right;
+
+	font-weight: bold;
+
+}
+
+
+
+.links a {
+
+	border: none;
+
+}
+
+
+
+.links a:hover {
+
+}
+
+
+
+/* Sidebars */
+
+
+
+#sidebar1 {
+
+	float: left;
+
+}
+
+
+
+
+
+
+
+.sidebar {
+
+
+	padding: 0;
+
+	font-size: 12px;
+
+}
+
+
+
+.sidebar ul {
+
+	margin: 0;
+
+	padding: 0;
+
+	list-style: none;
+
+}
+
+
+
+.sidebar li {
+
+	padding: 0 0 20px 0;
+
+}
+
+
+
+.sidebar li ul {
+
+	padding: 10px 0px;
+
+}
+
+
+
+.sidebar li li {
+
+	margin: 0 20px 0 15px;
+
+	padding: 8px 0px;
+
+	background: url(images/img04.gif) repeat-x left bottom;
+
+}
+
+
+
+
+
+.sidebar li h2 {
+
+	height: 34px;
+
+	margin: 0 0 0 0;
+
+	padding: 12px 15px 0px 15px;
+
+	font-size: 20px;
+
+	font-weight: normal;
+
+	color: #000000;
+
+}
+
+
+
+.sidebar a {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer {
+
+	width: 100%;
+
+	height: 70px;
+
+	margin: 0 auto;
+
+	background: #161600;
+
+}
+
+
+
+#footer-bg {
+
+	width: 960px;
+
+	margin: 0 auto;
+
+}
+
+
+
+#footer p {
+
+	margin: 0;
+
+	padding: 25px 0 0 0;
+
+	text-align: center;
+
+	font-size: smaller;
+
+}
+
+
+
+#footer a {
+
+	color: #E7E7E7;
+
+}
+
+
+
+#footer .link {
+
+	float: right;
+
+}
+
+
+
+#footer .copyright {
+
+	float: left;
+
+}
+
