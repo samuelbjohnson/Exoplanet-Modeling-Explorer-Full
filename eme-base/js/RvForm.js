@@ -42,7 +42,6 @@ dojo.declare("org.exoplanets.eme.js.RvForm", null, {
 			parameterName: "Period",
 			name: "period",
 			minimum: 0.01,
-			maximum: 500,
 			value: 10
 		});
 		
@@ -78,6 +77,8 @@ dojo.declare("org.exoplanets.eme.js.RvForm", null, {
 		s.cmvel = new org.exoplanets.eme.js.RvParameter(dojo.create("div", {}, this.getContainerNode()), {
 			parameterName: "Center of Mass Velocity",
 			name: "cmvel",
+			minimum: -200,
+			maximum: 200,
 			value: 0
 		});
 		

@@ -25,6 +25,13 @@ dojo.declare("org.exoplanets.eme.js.RvParameter", null, {
 	},
 	
 	getValue: function() {
+		if (!this.slider.get('value')) {
+			if(this.minimum) {
+				return this.minimum;
+			} else {
+				return 0;
+			}
+		}
 		return this.slider.getValue();
 	},
 	
@@ -43,16 +50,20 @@ dojo.declare("org.exoplanets.eme.js.RvParameter", null, {
 		}, this.sliderContainer);
 		
 		if(this.maximum) {
-			this.slider.maximum = this.maximum;
+			//this.slider.maximum = this.maximum;
+			this.slider.set('maximum', this.maximum);
 		}
 		if (this.minimum) {
-			this.slider.minimum = this.minimum;
+			//this.slider.minimum = this.minimum;
+			this.slider.set('minimum', this.minimum);
 		}
+		
+		this.slider.reset();
 	},
 	
 	sliderChange: function(value) {
-		//dojo.byId(this.name + "TextBox").value = value;
-		this.textBox.setValue(value);
+		//this.textBox.setValue(value);
+		this.textBox.set('value', value);
 		this.onChange();
 	},
 	
@@ -73,7 +84,8 @@ dojo.declare("org.exoplanets.eme.js.RvParameter", null, {
 	},
 	
 	textBoxChange: function(value) {
-		this.slider.setValue(value);
+		//this.slider.setValue(value);
+		this.slider.set('value', value);
 		this.onChange();
 	},
 	
