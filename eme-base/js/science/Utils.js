@@ -111,7 +111,7 @@ dojo.declare("org.exoplanets.eme.js.science.Utils", null, {
 			P = orbel.P;
 			tp = orbel.tp;
 			e = orbel.e;
-			om = orbel.om;
+			om = orbel.om * (Math.PI / 180);
 			k = orbel.k;
 			gamma = orbel.cmvel;
 			dvdt = orbel.dvdt;
