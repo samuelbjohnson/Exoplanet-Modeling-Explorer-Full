@@ -36,12 +36,10 @@ dojo.declare("org.exoplanets.eme.js.RvParameter", null, {
 	buildSlider: function() {
 		this.sliderContainer = dojo.create("div", {}, this.container);
 		this.slider = new dijit.form.HorizontalSlider({
-			id: this.name + "Slider",
 			name: this.name + "Slider",
 			value: this.value,
-			//minimum: this.minimum,
-			//maximum: this.maximum,
-			onChange: dojo.hitch(this, this.sliderChange)
+			onChange: dojo.hitch(this, this.sliderChange),
+			intermediateChanges: true
 		}, this.sliderContainer);
 		
 		if(this.maximum) {
@@ -65,6 +63,7 @@ dojo.declare("org.exoplanets.eme.js.RvParameter", null, {
 			name: this.name + "TextBox",
 			value: this.value,
 			onChange: dojo.hitch(this, this.textBoxChange),
+			intermediateChanges: true,
 			constraints: {
 				min: this.minimum,
 				max: this.maximum

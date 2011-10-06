@@ -42,6 +42,7 @@ dojo.declare("org.exoplanets.eme.js.RvForm", null, {
 			parameterName: "Period",
 			name: "period",
 			minimum: 0.01,
+			maximum: 500,
 			value: 10
 		});
 		

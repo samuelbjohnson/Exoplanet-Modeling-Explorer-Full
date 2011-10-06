@@ -2,7 +2,6 @@ dojo.provide("org.exoplanets.eme.js.RvFormSet");
 
 dojo.require("dijit.layout.ContentPane");
 dojo.require("dijit.layout.AccordionContainer");
-dojo.require("dijit.layout.TabContainer");
 
 dojo.declare("org.exoplanets.eme.js.RvFormSet", null, {
 	constructor: function(/*node*/ containerNode) {
@@ -13,7 +12,11 @@ dojo.declare("org.exoplanets.eme.js.RvFormSet", null, {
 	},
 	
 	buildAccordion: function() {
-		this.accordion = new dijit.layout.TabContainer({style: "height: 300px, width: 200px"}, this.container);
+		this.accordion = new dijit.layout.AccordionContainer({}, this.container);
+		
+		this.planetModels = new Array();
+		this.planetModel
+		
 		
 		this.accordion.addChild(new dijit.layout.ContentPane({
 			title: "First", 
@@ -26,5 +29,11 @@ dojo.declare("org.exoplanets.eme.js.RvFormSet", null, {
 		this.accordion.addChild(new dijit.layout.ContentPane({title: "Second", content: '<div id="second">Second</div>'}));
 		
 		this.accordion.startup();
+	},
+	
+	addNewRvForm: function() {
+		var planet, pane;
+		
+		pane = new dijit.layout.ContentPane
 	}
 });
