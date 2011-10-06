@@ -70,8 +70,8 @@ dojo.declare("org.exoplanets.eme.js.RvGraph", null, {
 		this.chart.addPlot("observations", {type: "MarkersOnly", lines: false, areas: false, markers: true});
 		this.chart.addPlot("default", {type: "Lines"});
 		
-		this.chart.addAxis("x");
-		this.chart.addAxis("y", {vertical: true});
+		this.chart.addAxis("x", {title: "Time (days)", titleOrientation: "away"});
+		this.chart.addAxis("y", {vertical: true, title: "Radial Velocity (m/s)"});
 		
 		this.chart.addSeries("default", series);
 		
