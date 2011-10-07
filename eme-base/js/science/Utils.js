@@ -114,7 +114,8 @@ dojo.declare("org.exoplanets.eme.js.science.Utils", null, {
 			om = orbel.om * (Math.PI / 180);
 			k = orbel.k;
 			gamma = orbel.cmvel;
-			dvdt = orbel.dvdt;
+			//convert dvdt to m/s/year from m/s/day
+			dvdt = orbel.dvdt / 365.242199;
 			curv = 0;
 			
 			if (P < 0) {
@@ -136,7 +137,7 @@ dojo.declare("org.exoplanets.eme.js.science.Utils", null, {
 			n2 = 1 - e;
 			nu = 2 * Math.atan(Math.pow((n1/n2), .5)* Math.tan(E1/2));
 			
-		    rv += k*(Math.cos(nu + om) + e * Math.cos(om)) + gamma + dvdt * (t-14000) + curv * Math.pow((t-14000), 2);
+		    rv += k*(Math.cos(nu + om) + e * Math.cos(om)) + gamma + dvdt * (t-tp) + curv * Math.pow((t-tp), 2);
 		}));
 		
 		return rv;
